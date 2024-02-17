@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+} /* astericso seleciona todos os elementos do projeto*/
+
+body {
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+
+#calc {
+  width: 400px;
+  padding: 0.5em;
+  border-radius: 3.5%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+#calc h3 {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #666;
+}
+
+#operations {
+  text-align: right;
+  height: 100px;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+#previous-operation {
+  color: #777;
+}
+
+#current-operation {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#buttons-container button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  height: 4em;
+  margin: 3px;
+  font-size: 1.2em;
+  background-color: azure;
+  cursor: pointer;
+}
+
+#buttons-container .number {
+  background-color: aliceblue;
+}
+
+#buttons-container button:hover {
+  background-color: rgb(156, 199, 204);
+  border-color: #999;
+}
+
+#buttons-container #equal-button {
+  grid-column: span 2;
+  background-color: rgb(204, 251, 251);
+  
+}
+
+#buttons-container #equal-button:hover {
+  background-color: rgb(151, 211, 211);
+}
